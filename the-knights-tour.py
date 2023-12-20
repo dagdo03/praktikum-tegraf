@@ -79,5 +79,12 @@ def knights_tour(closed=True):
     return True
 
 if __name__ == '__main__':
-    while not knights_tour(closed=True):
-        pass
+    input_cond = input('input closed or open tour: ')
+    if(input_cond == "open"):
+        while not knights_tour(closed=False):
+            pass
+    elif(input_cond == "close"):
+        while not knights_tour(closed=True):
+            pass
+
+    

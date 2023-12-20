@@ -21,13 +21,11 @@ def find_lis(arr):
     return max_length, lis_sequence
 
 
-
-
 if __name__ == '__main__':
     lis_length = None
     lis_elements = None
 
-    input_array = input('input_array')
+    input_array = input('input_array: ')
     arr = list(map(int, input_array.split(',')))
     lis_length, lis_elements = find_lis(arr)
     print(lis_length)
